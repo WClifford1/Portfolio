@@ -67,7 +67,7 @@ export default class Portfolio extends Component {
 
 
                     <Timeline.Item onClick={() => this.openmernApp()} dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created Wotnot Media portfolio web app using MERN stack Jul 2019</p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created Wotnot Media portfolio web app Jul 2019</p>
                         <Collapse isOpened={mernApp}>
                                 <p>Portfolio site for graphic design company</p>
                                 <p>Has working contact forms and admin dashboard</p>
@@ -84,7 +84,7 @@ export default class Portfolio extends Component {
 
 
                     <Timeline.Item onClick={() => this.openrailsApp()}>
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created Ruby on Rails two-sided marketplace project May 2019</p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created Ruby on Rails two-sided marketplace app May 2019</p>
                         <Collapse isOpened={railsApp}>
                                 <p>Ruby on Rails two-sided marketplace app</p>
                                 <p>Database: PostgreSQL</p>
