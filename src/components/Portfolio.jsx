@@ -13,8 +13,7 @@ export default class Portfolio extends Component {
             rubyApp: false,
             railsApp: false,
             mernApp: false,
-            sortal: false,
-            grad: false
+            sortal: false
         };
     }
 
@@ -34,18 +33,13 @@ export default class Portfolio extends Component {
         this.setState({ mernApp : !this.state.mernApp})
     }
 
-    opengrad = (e) => {
-        this.setState({ grad : !this.state.grad})
-    }
-
     opensortal = (e) => {
         this.setState({ sortal : !this.state.sortal})
     }
-// dfdfgh?
 
 
     render() {
-        const {coderAc, rubyApp, railsApp, mernApp, sortal, grad} = this.state;
+        const {coderAc, rubyApp, railsApp, mernApp, sortal} = this.state;
         return (
             <div style={{paddingLeft: "1%", paddingRight: "1%"}}>
                 <h2>Portfolio</h2>
@@ -110,7 +104,7 @@ export default class Portfolio extends Component {
                     </Timeline.Item>
 
 
-                    <Timeline.Item onClick={() => this.opencoderAc()} dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
+                    <Timeline.Item onClick={() => this.opencoderAc()} dot={<Icon type="clock-circle-o" style={{ color:"#1890ff",fontSize: '16px' }} />}>
                         <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={coderAc? {transform:"rotate(90deg)"} : undefined} /> Started Coderacademy Mar 2019</p>
                             <Collapse isOpened={coderAc}>
                                 <p>Web development bootcamp</p>

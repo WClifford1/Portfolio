@@ -15,7 +15,7 @@ export default class Contact extends Component {
                 <a style={{color:"black"}} href="https://github.com/WClifford1" >https://github.com/WClifford1</a><Paragraph style={{display:"inline"}} copyable={{ text: "https://github.com/WClifford1" }}></Paragraph>
                 <br/>
                 <br/>
-                <a style={{color:"black"}} href="mailto:williamdavidclifford@gmail.com" >williamdavidcliford@gmail.com</a><Paragraph style={{display:"inline"}} copyable={{ text: "williamdavidclifford@gmail.com" }}></Paragraph>
+                <a style={{color:"black"}} href="mailto:williamdavidclifford@gmail.com" >williamdavidclifford@gmail.com</a><Paragraph style={{display:"inline"}} copyable={{ text: "williamdavidclifford@gmail.com" }}></Paragraph>
                 <br/>
                 <br/>
             </div>
