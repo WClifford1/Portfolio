@@ -2,7 +2,7 @@
   "name": "portfolioreact",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wclifford1.github.io/newPortfolio/",
+  "homepage": "https://wclifford1.github.io/Portfolio",
   "dependencies": {
     "antd": "^3.22.1",
     "gh-pages": "^2.1.1",
