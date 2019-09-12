@@ -136,11 +136,6 @@ export default class Portfolio extends Component {
                             </Collapse>
                     </Timeline.Item>
                 </Timeline>
-                <br/>
-                <hr className="hr1"></hr>
-                <hr className="hr2"></hr>
-                <hr className="hr1"></hr>
-                <br/>
             </div>
         )
     }
