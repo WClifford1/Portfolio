@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import {Collapse} from 'react-collapse';
+import { Timeline, Icon } from 'antd';
 import 'antd/dist/antd.css';
 import './portfolioStyle.css';
-import { Timeline, Icon } from 'antd';
-import {Collapse} from 'react-collapse';
+
 
 
 export default class Portfolio extends Component {
@@ -13,32 +14,35 @@ export default class Portfolio extends Component {
             rubyApp: false,
             railsApp: false,
             mernApp: false,
-            sortal: false
+            sortal: false,
+            index: 0,
+            state: 0
         };
     }
-
+    
     opencoderAc = (e) => {
         this.setState({ coderAc : !this.state.coderAc})
     }
-
+    
     openrubyApp = (e) => {
         this.setState({ rubyApp : !this.state.rubyApp})
     }
-
+    
     openrailsApp = (e) => {
         this.setState({ railsApp : !this.state.railsApp})
     }
-
+    
     openmernApp = (e) => {
         this.setState({ mernApp : !this.state.mernApp})
     }
-
+    
     opensortal = (e) => {
         this.setState({ sortal : !this.state.sortal})
     }
-
-
+    
     render() {
+
+
         const {coderAc, rubyApp, railsApp, mernApp, sortal} = this.state;
         return (
             <div style={{paddingLeft: "1%", paddingRight: "1%"}}>
@@ -119,5 +123,3 @@ export default class Portfolio extends Component {
         )
     }
 }
-
-// npm install --save react react-motion react-collapse
