@@ -56,7 +56,7 @@ export default class Portfolio extends Component {
                     
 
                     <Timeline.Item onClick={() => this.openNutritionix()}>
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={nutritionix? {transform:"rotate(90deg)"} : undefined} /> Nutritionix API web app</p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={nutritionix? {transform:"rotate(90deg)"} : undefined} /> Nutritionix API web app Sep 2019</p>
                         <Collapse isOpened={nutritionix}>
                                 <p>Single page app built entirely on React</p>
                                 <p>Uses Nutritionix API</p>
