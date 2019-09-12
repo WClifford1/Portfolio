@@ -27,6 +27,10 @@ I am have also recently completed an internship as a junior developer at Sortal,
 My goal is to work as a junior developer in an environment where I am encouraged to perform well and which is conducive to my pursuit of career progression. I am open to remote work and open to relocation.</p> 
                 </section>
                 <br/>
+                <hr className="hr1"></hr>
+                <hr className="hr2"></hr>
+                <hr className="hr1"></hr>
+
                 <br/>
             </div>
         )
