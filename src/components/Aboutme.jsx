@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './aboutmestyle.css'
 
 export default class Aboutme extends Component {
 

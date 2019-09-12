@@ -15,6 +15,7 @@ export default class Portfolio extends Component {
             railsApp: false,
             mernApp: false,
             sortal: false,
+            nutritionix: false,
             index: 0,
             state: 0
         };
@@ -39,19 +40,37 @@ export default class Portfolio extends Component {
     opensortal = (e) => {
         this.setState({ sortal : !this.state.sortal})
     }
+
+    openNutritionix = (e) => {
+        this.setState({ nutritionix : !this.state.nutritionix})
+    }
     
     render() {
 
 
-        const {coderAc, rubyApp, railsApp, mernApp, sortal} = this.state;
+        const {coderAc, rubyApp, railsApp, mernApp, sortal, nutritionix} = this.state;
         return (
             <div style={{paddingLeft: "1%", paddingRight: "1%"}}>
                 <h2>Portfolio</h2>
                 <Timeline mode="alternate">
+                    
+
+                    <Timeline.Item onClick={() => this.openNutritionix()}>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={nutritionix? {transform:"rotate(90deg)"} : undefined} /> Nutritionix API web app</p>
+                        <Collapse isOpened={nutritionix}>
+                                <p>Single page app built entirely on React</p>
+                                <p>Uses Nutritionix API</p>
+                                <p>Fully responsive</p>
+                                <p>Deployment: Heroku</p>
+                                <a rel="noopener noreferrer" target="_blank" href="https://nutritionixapiapp.herokuapp.com/">https://nutritionixapiapp.herokuapp.com/</a>
+                                <br />
+                                <br />
+                        </Collapse>
+                        </Timeline.Item>
 
 
                     <Timeline.Item onClick={() => this.opensortal()} color="green">
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={sortal? {transform:"rotate(90deg)"} : undefined} /> Started internship with Sortal Aug 2019</p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Started internship with Sortal Aug 2019 <Icon className="arrow" type="caret-left" style={sortal? {transform:"rotate(-90deg)"} : undefined} /></p>
                     <Collapse isOpened={sortal}>
                                 <p>Junior developer internship position</p>
                                 <p>Typescript, Docker, MERN stack</p>
@@ -65,7 +84,7 @@ export default class Portfolio extends Component {
 
 
                     <Timeline.Item onClick={() => this.openmernApp()} dot={<Icon type="clock-circle-o" style={{ fontSize: '16px' }} />}>
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created Wotnot Media portfolio web app Jul 2019 <Icon className="arrow" type="caret-left" style={mernApp? {transform:"rotate(270deg)"} : undefined} /></p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={mernApp? {transform:"rotate(90deg)"} : undefined} /> Created Wotnot Media portfolio web app Jul 2019</p>
                         <Collapse isOpened={mernApp}>
                                 <p>Portfolio site for graphic design company</p>
                                 <p>Has working contact forms and admin dashboard</p>
@@ -82,7 +101,7 @@ export default class Portfolio extends Component {
 
 
                     <Timeline.Item onClick={() => this.openrailsApp()}>
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={railsApp? {transform:"rotate(90deg)"} : undefined} /> Created Ruby on Rails two-sided marketplace app May 2019</p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created Ruby on Rails two-sided marketplace app May 2019 <Icon className="arrow" type="caret-left" style={railsApp? {transform:"rotate(-90deg)"} : undefined} /> </p>
                         <Collapse isOpened={railsApp}>
                                 <p>Ruby on Rails two-sided marketplace app</p>
                                 <p>Database: PostgreSQL</p>
@@ -97,7 +116,7 @@ export default class Portfolio extends Component {
                     
 
                     <Timeline.Item onClick={() => this.openrubyApp()} color="red">
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Created first terminal app Mar 2019 <Icon className="arrow" type="caret-left" style={rubyApp? {transform:"rotate(270deg)"} : undefined} /></p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={rubyApp? {transform:"rotate(90deg)"} : undefined} /> Created first terminal app Mar 2019</p>
                         <Collapse isOpened={rubyApp}>
                                 <p>Simple Ruby terminal app</p>
                                 <p>Demonstrate basic CRUD functionality</p>
@@ -109,7 +128,7 @@ export default class Portfolio extends Component {
 
 
                     <Timeline.Item onClick={() => this.opencoderAc()} dot={<Icon type="clock-circle-o" style={{ color:"#1890ff",fontSize: '16px' }} />}>
-                        <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={coderAc? {transform:"rotate(90deg)"} : undefined} /> Started Coderacademy Mar 2019</p>
+                        <p className="timehead" style={{color:"black", cursor:"pointer"}}>Started Coderacademy Mar 2019 <Icon className="arrow" type="caret-left" style={coderAc? {transform:"rotate(-90deg)"} : undefined} /> </p>
                             <Collapse isOpened={coderAc}>
                                 <p>Web development bootcamp</p>
                                 <p>Diploma of Information Technology</p>
