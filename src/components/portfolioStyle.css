@@ -3,3 +3,9 @@
         display: none;
     }
 }
+
+
+#nut {
+    width: 50%;
+    animation: example 4s 2s infinite alternate;
+}
