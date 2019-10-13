@@ -62,7 +62,7 @@ export default class Portfolio extends Component {
                                 <p>Uses Nutritionix API</p>
                                 <p>Fully responsive</p>
                                 <p>Deployment: Netlify</p>
-                                <a rel="noopener noreferrer" target="_blank" href="agitated-lamport-a7e92f.netlify.com">agitated-lamport-a7e92f.netlify.com</a>
+                                <a rel="noopener noreferrer" target="_blank" href="https://agitated-lamport-a7e92f.netlify.com">https://agitated-lamport-a7e92f.netlify.com</a>
                                 <br />
                                 <br />
                         </Collapse>
