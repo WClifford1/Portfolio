@@ -5,7 +5,7 @@ import TechStack from './components/TechStack';
 import Contact from './components/Contact';
 import 'antd/dist/antd.css';
 import './App.css'
-//test
+
 
 export default class App extends Component {
 
@@ -21,7 +21,7 @@ export default class App extends Component {
         return (
             <React.Fragment>
                 <h1 className="heading" style={{paddingLeft: "1%", paddingRight: "1%"}}>William Clifford | Junior Developer</h1>
-                <Aboutme darkMode={this.state.darkMode} />
+                <Aboutme />
                 <Portfolio />
                 <TechStack />
                 <Contact />
