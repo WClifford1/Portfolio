@@ -62,10 +62,10 @@ export default class Portfolio extends Component {
                     <Timeline.Item onClick={() => this.openNodeGoogle()} color="green">
                         <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={sortal? {transform:"rotate(90deg)"} : undefined} /> Node.js Google Calendar API app - Oct 2019</p>
                         <Collapse isOpened={nodeGoogle}>
+                                <p>Github: <a rel="noopener noreferrer" target="_blank" href="https://github.com/WClifford1/Nutrition-Calculator-App">https://github.com/WClifford1/Nutrition-Calculator-App</a></p>
                                 <p>Node.js booking system that uses the Google Calendar API</p>
                                 <p>Bookings can be made and timeslots viewed on Postman</p>
                                 <p>Created bookings will be added as an event in the users' Google Calendar</p>
-                                <p>Github: <a rel="noopener noreferrer" target="_blank" href="https://github.com/WClifford1/Nutrition-Calculator-App">https://github.com/WClifford1/Nutrition-Calculator-App</a></p>
                         </Collapse>
                     </Timeline.Item>
                     
