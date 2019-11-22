@@ -95,6 +95,7 @@ export default class Portfolio extends Component {
                         <p className="timehead" style={{color:"black", cursor:"pointer"}}>Wotnot Media Portfolio Web Page - Jul 2019 <Icon className="arrow" type="caret-left" style={mernApp? {transform:"rotate(-90deg)"} : undefined} /></p>
                         <Collapse isOpened={mernApp}>
                                 <p><a rel="noopener noreferrer" target="_blank" href="https://festive-cori-46ce58.netlify.com">https://festive-cori-46ce58.netlify.com</a></p>
+                                <p>Github: <a rel="noopener noreferrer" target="_blank" href="https://github.com/WClifford1/wotnot-media">https://github.com/WClifford1/wotnot-media</a></p>
                                 <p>Portfolio website for a graphic design company</p>
                                 <p>React.js, Node.js, Express.js and MongoDB</p>
                                 <p>Storage: AWS</p>
@@ -107,6 +108,7 @@ export default class Portfolio extends Component {
                         <p className="timehead" style={{color:"black", cursor:"pointer"}}><Icon className="arrow" type="caret-right" style={railsApp? {transform:"rotate(90deg)"} : undefined} /> Ruby on Rails Two-sided Marketplace App - May 2019</p>
                         <Collapse isOpened={railsApp}>
                                 <p><a rel="noopener noreferrer" target="_blank" href="https://glacial-castle-71209.herokuapp.com">https://glacial-castle-71209.herokuapp.com</a></p>
+                                <p>Github: <a rel="noopener noreferrer" target="_blank" href="https://github.com/WClifford1/RailsAssessment">https://github.com/WClifford1/RailsAssessment</a></p>
                                 <p>Two-sided marketplace app - users can create an account, create listings, view listings, add items to shopping cart and purchase items.</p>
                                 <p>Database: PostgreSQL</p>
                                 <p>User Authentication: Devise</p>
