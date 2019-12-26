@@ -12,27 +12,19 @@ export default class Aboutme extends Component {
     return (
       <div style={{ paddingLeft: "1%", paddingRight: "1%" }}>
         <section className="hello">
-          <h2>About Me</h2>
           <br />
+          <h2>About Me</h2>
           <p>
-            I have recently completed a Diploma of Information Technology from
-            the web-development bootcamp at Coderacademy in Brisbane, during which I gained
-            experience building RESTFul APIs using multiple languages, libraries
-            and frameworks and using the AGILE methodology throughout the
-            software development lifecycle.
-            <br /><br /> I have completed a Junior Developer
-            internship at Sortal in Brisbane, during which I worked on back-end
-            micro-services and front-end UI components, predominantly using
+            I am currently working as a Junior Full Stack Developer at <a rel="noopener noreferrer" target="_blank" href="https://outfit.io/">Outfit.io</a>, predominantly using Ruby on Rails, React.js and PostgreSQL.<br /><br />
+            In 2019 I gained a Diploma of Information Technology from
+            the web-development bootcamp at Coderacademy and completed a Junior Developer
+            internship at Sortal in Brisbane. During my internship I worked on back-end
+            micro-services and front-end UI components using
             Typescript, React.js, Node.js, MongoDB and Docker.
-            <br /><br />I am currently seeking to work as a Junior Developer in a role
-            in which I am encouraged to perform well and which contributes to my
-            professional development and career progression. Please do not
-            hesitate to contact me if there is any further information I that
-            can provide or any coding challenges that I can complete to
-            demonstrate my suitability, thank you.
+            <br /><br />
+            I enjoy being a part of a team, following best practices, improving my skills and learning new things.
           </p>
         </section>
-        <br />
         <br />
       </div>
     );
